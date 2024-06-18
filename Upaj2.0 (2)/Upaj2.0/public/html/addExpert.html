@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+  </head>
+  <body>
+    <header id="header">
+      <a href="./" class="logo">UPAJ</a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="./">Home</a></li>
+          <!-- <li><a href="./addExpert">Add Expert</a></li> -->
+          <li>
+            <a href="#" id="profile"></a>
+            <ul>
+              <li><a href="/" onclick="return logout()">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <!-- Add Agent Section -->
+      <div class="login-box">
+        <div class="form-box">
+          <header>
+            <h2 style="text-align: center; color: #365a70; margin-block: 10px">
+              ADD NEW EXPERT
+            </h2>
+          </header>
+          <form action="/admin/addExpert" method="post">
+            <input
+              type="text"
+              id="expertname"
+              name="expertname"
+              placeholder="Enter Expert name"
+              required
+            />
+            <select id="expertise" name="expertise" required>
+              <option value="">Select Expertise</option>
+              <option value="kharif">Kharif</option>
+              <option value="rabi">Rabi</option>
+              <option value="zaid">Zaid</option>
+            </select>
+            <input type="submit" class="loginBtn" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../js/custom.js"></script>
+  </body>
+</html>

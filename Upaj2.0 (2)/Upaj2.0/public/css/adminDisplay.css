@@ -1,0 +1,134 @@
+/* I always reset all the html elements */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: auto;
+  color: #555;
+}
+
+table {
+  /* width:  1150px; */
+  width: 85%;
+  /* max-width: 1150px; */
+  margin: 150px auto 5px auto;
+  height: auto;
+  /* table-layout: fixed; */
+  background: linear-gradient(to right bottom, #ebf4f5, #2570a2);
+}
+#msg {
+  width: auto;
+  /* max-width: 1150px; */
+  margin: auto;
+}
+
+table th {
+  font-family: "Roboto Slab";
+  padding: 10px 15px;
+  color: #f4f4f4;
+  background-color: black;
+  border: thin solid #d4d4d4;
+  border-radius: 5px;
+  font-size: large;
+}
+
+table td {
+  font-family: "Roboto Slab";
+  padding: 10px;
+  border: thin solid #d4d4d4;
+  /* max-width: 10%; */
+  text-wrap: break-all;
+
+  height: auto;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.detail {
+  margin-bottom: 5px;
+  border-collapse: collapse;
+}
+.detail th {
+  padding: 5px 5px;
+  font-size: 15px;
+  width: auto;
+  border: thin solid #d4d4d4;
+}
+.detail td {
+  padding: 5px 5px;
+  font-size: 15px;
+  border: thin solid #d4d4d4;
+}
+table a {
+  text-decoration: none;
+  color: darkred;
+  background-color: #ffecef;
+  padding: 10px 15px;
+}
+table a:active {
+  background-color: #ccf4d6;
+  color: green;
+}
+
+table select {
+  padding: 10px;
+  width: 200px;
+  font-size: 16px;
+  border: thick solid #d4d4d4;
+  background-color: transparent;
+}
+table select:focus {
+  outline: invert;
+}
+.back {
+  background-color: #10449a; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+}
+.chat-btn {
+  background-color: #10449a; /* Green */
+  border: none;
+  color: white;
+  /* padding: 10px 20px; */
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  height: inherit;
+  border-radius: 5px;
+}
+.show-btn {
+  background-color: #e83c29; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.chat-btn:hover {
+  background: linear-gradient(to right bottom, #ebf4f5, #2570a2);
+  color: black;
+  transition: 0.7s;
+}
+.show-btn:hover {
+  background: linear-gradient(to right bottom, #ebf4f5, #af5656);
+  color: black;
+  transition: 0.7s;
+}

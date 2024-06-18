@@ -1,0 +1,171 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prediction Form</title>
+    <link rel="stylesheet" href="../css/predictionForm.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header id="header">
+      <a href="./" class="logo">UPAJ</a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="./predictionForm">Prediction</a></li>
+          <li>
+            <a href="https://plantdiseasepredict.streamlit.app/">Detection</a>
+          </li>
+          <li>
+            <a href="#" id="profile"></a>
+            <ul>
+              <li>
+                <a href="/users/auth" onclick="return logout()">Logout</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="title"></div>
+      <div class="content">
+        <form action="/users/newTicket" method="post">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Username</span>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter your username"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input
+                type="email"
+                name="useremail"
+                placeholder="Enter your email"
+                id="useremail"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Region</span>
+              <input
+                type="text"
+                name="region"
+                placeholder="Enter your region"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Nitrogen</span>
+              <input
+                type="text"
+                name="nitrogen"
+                placeholder="Enter amount of nitrogen"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Phosphorous</span>
+              <input
+                type="text"
+                name="phosphorous"
+                placeholder="Enter amount of phosphorous"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Potassium</span>
+              <input
+                type="text"
+                name="potassium"
+                placeholder="Enter amount of potassium"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Temperature(°C)</span>
+              <input
+                type="text"
+                name="temperature"
+                placeholder="Enter temperature"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Humidity(%)</span>
+              <input
+                type="text"
+                name="humidity"
+                placeholder="Enter amount of humidity"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Rainfall(mm)</span>
+              <input
+                type="text"
+                name="rainfall"
+                placeholder="Enter amount of rainfall"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">pH</span>
+              <input
+                type="text"
+                name="pH"
+                placeholder="Enter pH level"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Area(sq m)</span>
+              <input
+                type="text"
+                name="area"
+                placeholder="Enter total area of field"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Season</span>
+              <input
+                type="text"
+                name="season"
+                placeholder="Enter season"
+                required
+              />
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Predict" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../js/custom.js"></script>
+    <script>
+      const email = document.getElementById("useremail");
+      const username = document.getElementById("username");
+      fetch("/getUserDetail")
+        .then((res) => {
+          if (res.status === 200) {
+            return res.json();
+          } else {
+            alert("Something weird happened!!!");
+          }
+        })
+        .then((data) => {
+          email.value = `${data.useremail}`;
+          username.value = `${data.username}`;
+        });
+    </script>
+  </body>
+</html>

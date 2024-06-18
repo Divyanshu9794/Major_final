@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/SignUP</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Login Section -->
+      <div class="login-box">
+        <div class="form-box">
+          <header>
+            <h1 id="title">Admin Login</h1>
+          </header>
+          <form action="/admin/signin" method="post">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email email address"
+              required
+            />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter password"
+              required
+            />
+            <a href="">Forgot Password</a>
+            <input type="submit" class="loginBtn" value="Login" />
+          </form>
+        </div>
+      </div>
+      <!-- SIGN up section-->
+      <div class="signup-box">
+        <div class="form-box">
+          <!-- <header>
+                <h1 id="title">Admin Sign Up</h1>
+            </header>
+            <form action="/admin/signup" method="post">
+                <input type="text" name="username" placeholder="Enter name" id="nameField" required>
+                <input type="email" id="emailId" name="email" placeholder="Enter email address" required>
+                <input type="password" id="pass" name="password" placeholder="Enter password" required>
+                <a href="">Forgot Password</a> 
+                <input type="submit" class ="signUpBtn" value="Signup">
+                <p class="signup">Already a member? <a href="#" id="signinToggle">Login</a></p>
+            </form>-->
+        </div>
+      </div>
+    </div>
+    <script src="../js/toggle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', sans-serif;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  /* background: linear-gradient(to right bottom, #053f66, #2570a2); */
+  background: url("../image/bg6.jpg");
+  background-size: cover;
+  /* background-size: 100% 100%; */
+  background-repeat: no-repeat;
+  /* background-position: center; */
+}
+h1 {
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  font-size: 50px;
+}
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  text-transform: capitalize;
+  padding: 20px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+header .logo {
+  font-weight: bolder;
+  font-size: 25px;
+  color: #333;
+}
+header .navbar ul {
+  list-style: none;
+}
+header .navbar ul li {
+  position: relative;
+  float: left;
+  border-radius: 8px;
+}
+header .navbar ul li a {
+  font-size: 20px;
+  padding: 20px;
+  display: block;
+  color: #333;
+  border-radius: 8px;
+}
+header .navbar ul li a:hover {
+  background: #333;
+  color: #fff;
+}
+header .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: #fff;
+  display: none;
+}
+#search{
+    width: 250px;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    font-size: 15px;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    float: left;
+}
+header .navbar ul li ul li button {
+  width: 100%;
+  background-color: #fff;
+  color: black;
+  font-size: 20px;
+  padding: 20px 20px 20px 0px;
+  left: 0;
+  border: none;
+  border-radius: 8px;
+}
+header .navbar ul li button:hover {
+  background: #333;
+  color: #fff;
+}
+#search_btn:hover{
+  background: #333;
+  color: #fff;
+  border-radius: 12px;
+}
+header .navbar ul li ul li {
+  width: 100%;
+  /* display: block; */
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+  display: initial;
+}
+#profile {
+  text-transform: capitalize;
+}
+.info {
+  display: contents;
+}
+.show-details {
+  display: none;
+}

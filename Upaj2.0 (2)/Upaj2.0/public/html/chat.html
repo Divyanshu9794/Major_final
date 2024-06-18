@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download UPAJ app</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/userDisplay.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .btn {
+        background-color: DodgerBlue;
+        border: none;
+        color: white;
+        padding: 12px 84px;
+        cursor: pointer;
+        font-size: 20px;
+      }
+      #apk {
+        color: white;
+      }
+
+      /* Darker background on mouse-over */
+      .btn:hover {
+        background-color: RoyalBlue;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <a href="./" class="logo">UPAJ</a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li>
+            <a href="#" id="profile"></a>
+            <ul>
+              <li>
+                <a href="/" onclick="return logout()">Logout</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="msg-box">
+      To access the features of the UPAJ on your smart<br />phone, download the
+      app.
+      <button class="btn">
+        <i class="fa fa-download"></i
+        ><a id="apk" href="../apk/app-debug.apk" download="UPAJ"> Download</a>
+      </button>
+    </div>
+    <script src="../js/custom.js"></script>
+  </body>
+</html>

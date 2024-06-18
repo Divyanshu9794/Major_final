@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/userDisplay.css" />
+  </head>
+  <body>
+    <header id="header">
+      <a href="./app" class="logo">UPAJ</a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="./predictionForm">Prediction</a></li>
+          <li>
+            <a href="https://plantdiseasepredict.streamlit.app/">Detection</a>
+          </li>
+          <li>
+            <a href="#" id="profile"></a>
+            <ul>
+              <li>
+                <a href="/" onclick="return logout()">Logout</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- table data section -->
+    <div class="info">
+      <table>
+        <thead id="table-head">
+          <tr>
+            <th>SNO</th>
+            <th>Predicted Crop</th>
+            <th>Season</th>
+            <th>Assigned Expert</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th colspan="3">Action</th>
+          </tr>
+        </thead>
+
+        <tbody id="data-output">
+          <!-- data from js -->
+        </tbody>
+      </table>
+      <div id="msg"></div>
+    </div>
+    <div class="show-details">
+      <table class="detail">
+        <tr>
+          <td><b>REPORT</b></td>
+          <td>
+            <button class="back">Back</button>
+            <!-- <button class="back">Download</button> -->
+          </td>
+        </tr>
+        <tr>
+          <th>Name</th>
+          <td id="uname">Ayush Asthana</td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td id="email">a@gmail.com</td>
+        </tr>
+        <tr>
+          <th>Predicted Crop</th>
+          <td id="crop">Crop X</td>
+        </tr>
+        <tr>
+          <th>Expert Assigned</th>
+          <td id="expert">Expert X</td>
+        </tr>
+        <tr>
+          <th>Date</th>
+          <td id="date"></td>
+        </tr>
+        <tr>
+          <th>Season</th>
+          <td id="season">Winter</td>
+        </tr>
+        <tr>
+          <th>Area</th>
+          <td id="area">25</td>
+        </tr>
+        <tr>
+          <th>Region</th>
+          <td id="region">Jaunpur</td>
+        </tr>
+        <tr>
+          <th>Nitrogen</th>
+          <td id="n">0.8</td>
+        </tr>
+        <tr>
+          <th>Phosphorous</th>
+          <td id="p">0.2</td>
+        </tr>
+        <tr>
+          <th>Potassium</th>
+          <td id="k">.69</td>
+        </tr>
+        <tr>
+          <th>pH</th>
+          <td id="pH">5</td>
+        </tr>
+        <tr>
+          <th>Humidity</th>
+          <td id="humidity">55%</td>
+        </tr>
+        <tr>
+          <th>Rainfall</th>
+          <td id="rainfall">132mm</td>
+        </tr>
+        <tr>
+          <th>Temperature</th>
+          <td id="temp">32C</td>
+        </tr>
+        <tr>
+          <th>Status</th>
+          <td id="status">pending</td>
+        </tr>
+      </table>
+    </div>
+    <script src="../js/custom.js"></script>
+    <script src="../js/userDisplay.js"></script>
+  </body>
+</html>

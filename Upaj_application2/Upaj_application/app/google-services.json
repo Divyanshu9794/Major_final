@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "664382798328",
+    "project_id": "upaj-7ef67",
+    "storage_bucket": "upaj-7ef67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664382798328:android:8a9072a8e8c08d3ef27e0d",
+        "android_client_info": {
+          "package_name": "com.example.upaj_application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp3KHzHih_ndP1Zf3y4v_AL4LPXyCWyUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664382798328:android:d3dbf58115d08479f27e0d",
+        "android_client_info": {
+          "package_name": "upaj.application.upaj"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp3KHzHih_ndP1Zf3y4v_AL4LPXyCWyUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
